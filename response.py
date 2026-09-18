@@ -44,7 +44,7 @@ def response_status():
             print('Suggestion: The server is taking too long to respond.')
             
         elif "no scheme supplied" in error_message:
-            suggestion = f"http://{url}"
+            suggestion = f"https://{url}"
             print('Error : The URL format is invalid.')
             print('Did you mean ' + suggestion + '?')
 
